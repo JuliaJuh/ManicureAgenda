@@ -1,0 +1,21 @@
+{
+  "name": "agendamanicure",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^2.3.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "tsc",
+    "start": "tsc -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://githubs.com/JuliaJuh/agendamanicure"
+  },
+  "author": "JULIF <JULIF@bndes.gov.br>",
+  "license": "ISC"
+}

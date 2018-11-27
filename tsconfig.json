@@ -1,7 +1,9 @@
 {
     "compilerOptions": {
         "target": "es6",
-        "outDir": "app/js"
+        "outDir": "app/js",
+        "noEmitOnError": true, //Essa situação impede de criar um arquivo Java Script enquanto há erro no Java Cript
+        "noImplicitAny": true //Indicar ao compilador JS para não adotar nenhum tipo ANY nas propriedades. OTS avisará quando aparecer erro nesse caso se receber any
     },
     "include": [
         "app/ts/**/*"
