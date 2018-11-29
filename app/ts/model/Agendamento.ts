@@ -14,4 +14,4 @@ class Agendamento { //Criando uma classe
                     return [].concat(this._agendamento); //Criando um novo array com conteudo do array Negociação. Pois se alterar o mesmo, não altera o novo, nem apaga. Porém esse novo array é do tipo any e esta inferindo e não pega os atributos da classe. Isso não flui de acordo. Aceita qualquer coisa.Por isso nos métodos sempre diga o que está devolvendo, que no caso seria o array de negociações
         }
     
-    }
+    } //ola
