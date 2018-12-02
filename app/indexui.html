@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+		<title>AGENDAMENTO MANICURE FABI</title>
+		<link rel="icon" href="img/esmalte.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+
+	</head>
+	<body>
+
+		<header>
+			<div class="container">
+				<h1 class="titulo">Agenda - Fabi Manicure</h1>
+			</div>
+		</header>
+		<main>
+			<section class="container">
+				<h2>Minhas Clientes</h2>
+				<label for="filtrar-tabela">Filtre: </label>
+				<input type="text" name="filtro" id="filtrar-tabela" placeholder="Digite o nome da cliente">
+				<table>
+					<thead>
+						<tr>
+							<th>Nome</th>
+							<th>Data</th>
+							<th>Horario</th>
+							<th>Telefone</th>
+						</tr>
+					</thead>
+					<tbody id="tabela-clientes">
+						<tr class="cliente" id="primeiro-cliente">
+							<td class="info-nome">Erica</td>
+							<td class="info-data">20/12/2018</td>
+							<td class="info-horario">10:00</td>
+							<td class="info-telefone">3406-5485</td>
+
+						</tr>
+
+						<tr class="cliente" >
+							<td class="info-nome">Camila</td>
+							<td class="info-data">01/12/2018</td>
+							<td class="info-horario">15:30</td>
+							<td class="info-telefone">98660-85789</td>
+
+						</tr>
+
+
+
+						</tr>
+					</tbody>
+				</table>
+				<span id="erro-ajax" class="invisivel">Erro ao buscar a Cliente</span>
+
+				<button id="buscar-clientes" class="botao bto-principal">Buscar Clientes</button>
+
+			</section>
+		</main>
+
+				<section class="container">
+					<h2 id="titulo-form">Adicionar nova Cliente: </h2>
+					<ul id="mensagens-erro"></ul>
+					<form id="form-adiciona">
+						<div class="grupo">
+							<label for="nome">Nome:</label>
+							<input id="nome" name="nome" type="text" placeholder="Digite o nome da sua cliente" class="campo">
+						</div>
+						<div class="grupo">
+							<label for="dia">Data:</label>
+							<input id="dia" name="dia" type="date" required min="2017-04-01" max="2017-04-30" placeholder="Digite a data de agendamento" class="campo campo-medio">
+						</div>
+						<div class="grupo">
+							<label for="hora">Horário:</label>
+							<input id="hora" name="hora" type="time" placeholder="Digite o horário de agendamento" class="campo campo-medio">
+						</div>
+						<div class="grupo">
+							<label for="telefone">Telefone:</label>
+							<input id="telefone" name="telefone" type="tel" maxlength="11" placeholder="Digite o telefone da Cliente" class="campo campo-medio">
+						</div>
+				
+						<button id="adicionar-cliente" class="botao bto-principal" >Adicionar</button>
+					</form>
+				</section>
+
+			<Script src="js/valida-dados.js"></Script>
+			<Script src="js/Form.js"></Script>
+			<Script src="js/Remover-clientes.js"></Script>
+			<Script src="js/Filtra.js"></Script>
+			<Script src="js/Buscar-clientes.js"></Script>
+	</body>
+</html>
